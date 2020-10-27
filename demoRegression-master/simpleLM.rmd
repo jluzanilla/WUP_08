@@ -32,6 +32,7 @@ predict(simp,new)
 predict(simp,new,se.fit=TRUE)
 ```
 
+We will try HEADLEN to predict LENGTH. Tried a few variables and this one appeared to be the best towards adjusted R squared. 
 
 
 ```{r}
