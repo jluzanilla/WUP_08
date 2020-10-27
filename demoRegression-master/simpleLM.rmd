@@ -48,15 +48,15 @@ predict(headlength,new)
 predict(headlength,new,se.fit=TRUE)
 ```
 
-
-
+Adjusted R squared for this model was 0.84 so it was the better model for LENGTH. 
 
 
 
 ## now predict the length of a bear who has a neck of 17, 22 and 26
 
-
+Predictions of length for both models are provided above. 
 
 
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
 
+We did find another variable and that variable was HEADLEN. 
