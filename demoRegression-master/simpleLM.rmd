@@ -1,6 +1,6 @@
 ---
 title: "simpleRegress"
-author: "put your name here"
+author: "Jeanette Serrano"
 date: "Fall 2020"
 output: html_document
 ---
@@ -24,13 +24,36 @@ abline(simp)
 summary.lm(simp)
 ```
 
-## now predict the length of a bear who has a neck of 17, 22 and 26
-
-
 ```{r}
 new <- data.frame(NECK=c(17,22,26))
 predict(simp,new)
 predict(simp,new,se.fit=TRUE)
 ```
+
+
+
+```{r}
+headlength <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(headlength)
+summary.lm(headlength)
+```
+
+```{r}
+new <- data.frame(HEADLEN=c(17,22,26))
+predict(headlength,new)
+predict(headlength,new,se.fit=TRUE)
+```
+
+
+
+
+
+
+## now predict the length of a bear who has a neck of 17, 22 and 26
+
+
+
+
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
 
