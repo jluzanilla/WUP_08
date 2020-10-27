@@ -24,6 +24,8 @@ abline(simp)
 summary.lm(simp)
 ```
 
+When we used the NECK to predict the LENGTH it looks about a straight line, the R squared value is about 0.75. 
+
 ```{r}
 new <- data.frame(NECK=c(17,22,26))
 predict(simp,new)
